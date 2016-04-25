@@ -1,0 +1,22 @@
+The Makefile will:
+
+1) With 'make all' will make the modular base policy, load it and copy the
+   configuration files to the correct directories under the "modular-test"
+   policy area.
+
+   The FLASK files are from F16 reference policy source.
+
+2) To run the policy need to:
+      edit the /etc/selinux/config file entries SELINUXTYPE=modular-test and
+         SELINUX=permissive.
+      touch /.autorelabel
+      reboot the system
+
+The "build-policy.py" build script should be read to find out the gory details.
+
+When testing the policy capabilities or constraints example you only need
+remove the comments from the relevant sections of the base.conf file and run:
+
+   make  base_module
+
+as this will rebuild the policy using just the selinux commands.

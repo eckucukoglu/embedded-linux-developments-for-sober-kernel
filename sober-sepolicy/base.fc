@@ -1,0 +1,24 @@
+/                               system_u:object_r:unconfined_t
+/.*                             system_u:object_r:unconfined_t
+
+/data/bin                       system_u:object_r:sober_app_bin_t
+/data/bin/.*                    system_u:object_r:sober_app_bin_t
+
+/root/AppStore                  system_u:object_r:sober_app_bin_t
+/root/AppStore/.*               system_u:object_r:sober_app_bin_t
+
+/root/AppStore/tmp/Downloads    system_u:object_r:sober_app_bin_t
+/root/AppStore/tmp/Install      system_u:object_r:sober_app_bin_t
+
+/etc/appmand                    system_u:object_r:sober_manifest_t
+/etc/appmand/.*                 system_u:object_r:sober_manifest_t
+
+/etc/certs                      system_u:object_r:sober_cert_t
+/etc/certs/.*                   system_u:object_r:sober_cert_t
+
+/etc/login.conf                 system_u:object_r:sober_login_conf_t
+
+/usr/bin/appmand                system_u:object_r:sober_appmand_exec_t
+/usr/bin/LoginScreen            system_u:object_r:sober_loginscreen_exec_t
+/usr/bin/Soberstore             system_u:object_r:sober_soberstore_exec_t
+/usr/bin/DesktopScreen          system_u:object_r:sober_desktop_exec_t

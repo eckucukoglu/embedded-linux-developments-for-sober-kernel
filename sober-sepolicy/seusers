@@ -1,0 +1,3 @@
+system_u:system_u
+unconfined_u:unconfined_u
+__default__:unconfined_u
