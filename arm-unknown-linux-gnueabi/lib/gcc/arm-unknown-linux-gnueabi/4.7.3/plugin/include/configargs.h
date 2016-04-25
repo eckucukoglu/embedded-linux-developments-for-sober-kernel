@@ -1,0 +1,7 @@
+/* Generated automatically. */
+static const char configuration_arguments[] = "/home/spender/crosstool-ng-1.19.0/.build/src/gcc-4.7.3/configure --build=x86_64-build_unknown-linux-gnu --host=x86_64-build_unknown-linux-gnu --target=arm-unknown-linux-gnueabi --prefix=/home/spender/x-tools/arm-unknown-linux-gnueabi --with-sysroot=/home/spender/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/sysroot --enable-languages=c,c++ --with-float=soft --with-pkgversion='crosstool-NG 1.19.0' --enable-__cxa_atexit --disable-libmudflap --disable-libgomp --disable-libssp --disable-libquadmath --disable-libquadmath-support --with-gmp=/home/spender/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi/buildtools --with-mpfr=/home/spender/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi/buildtools --with-mpc=/home/spender/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi/buildtools --with-ppl=no --with-isl=no --with-cloog=no --with-libelf=/home/spender/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi/buildtools --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --enable-threads=posix --enable-target-optspace --enable-plugin --disable-nls --disable-multilib --with-local-prefix=/home/spender/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/sysroot --enable-c99 --enable-long-long";
+static const char thread_model[] = "posix";
+
+static const struct {
+  const char *name, *value;
+} configure_default_options[] = { { "float", "soft" }, { "tls", "gnu" } };
