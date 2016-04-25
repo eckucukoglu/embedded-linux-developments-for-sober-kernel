@@ -1,0 +1,9 @@
+{
+	"id":	115,
+	"path":	"/usr/bin/gnome-calculator",
+	"name":	"gnome-calculator",
+	"group":	"none",
+	"prettyname":	"Calculator",
+	"icon":	"Calculator.png",
+	"hash":	"40bfb3b6565739ef668ff4d33e9cabd3f107a21d37d97f82646145bec5a89641"
+}
