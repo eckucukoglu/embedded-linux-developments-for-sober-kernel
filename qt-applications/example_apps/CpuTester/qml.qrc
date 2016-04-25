@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>home_icon.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,43 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>pics/sober_newspecs/bg.png</file>
+        <file>pics/sober_newspecs/icon/homeIcon.png</file>
+        <file>pics/sober_newspecs/icon/icon_bekopos.png</file>
+        <file>pics/sober_newspecs/icon/icon_calendar.png</file>
+        <file>pics/sober_newspecs/icon/icon_chrome.png</file>
+        <file>pics/sober_newspecs/icon/icon_clock.png</file>
+        <file>pics/sober_newspecs/icon/icon_cpu.png</file>
+        <file>pics/sober_newspecs/icon/icon_deviceset.png</file>
+        <file>pics/sober_newspecs/icon/icon_garanti.png</file>
+        <file>pics/sober_newspecs/icon/icon_ing.png</file>
+        <file>pics/sober_newspecs/icon/icon_mail.png</file>
+        <file>pics/sober_newspecs/icon/icon_networkset.png</file>
+        <file>pics/sober_newspecs/icon/icon_notebook.png</file>
+        <file>pics/sober_newspecs/icon/icon_player.png</file>
+        <file>pics/sober_newspecs/icon/icon_security.png</file>
+        <file>pics/sober_newspecs/icon/icon_teb.png</file>
+        <file>pics/sober_newspecs/icon/icon_tfb.png</file>
+        <file>pics/sober_newspecs/icon/icon_ykb.png</file>
+        <file>AppDelegate.qml</file>
+        <file>DesktopGrid.qml</file>
+        <file>NavigationBar.qml</file>
+        <file>StatusBarTop.qml</file>
+        <file>SwipeArea.qml</file>
+        <file>pics/sober_newspecs/bg2.jpg</file>
+        <file>GridListModel.qml</file>
+        <file>InstallArea.qml</file>
+        <file>Calculator.png</file>
+        <file>Sci.png</file>
+        <file>clock.png</file>
+        <file>MemoryTester.png</file>
+        <file>security.png</file>
+        <file>tetrix.png</file>
+        <file>notebook.png</file>
+        <file>NetworkConfiguration.png</file>
+        <file>mail.png</file>
+        <file>CpuAndMemoryMonitor.png</file>
+        <file>Calender.png</file>
+        <file>CustomButton.qml</file>
+    </qresource>
+</RCC>

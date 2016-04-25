@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>home_icon.png</file>
+        <file>CustomButton.qml</file>
+        <file>CustomMessageBox.qml</file>
+    </qresource>
+</RCC>

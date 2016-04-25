@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>SELinuxTab.qml</file>
+        <file>EncryptionTab.qml</file>
+        <file>CustomSwitchStyle.qml</file>
+        <file>FileEncDecTab.qml</file>
+        <file>FilesystemEncDecTab.qml</file>
+        <file>PasswordDialog.qml</file>
+        <file>filepath_password_pairs</file>
+        <file>filesystempath_password_pairs</file>
+    </qresource>
+</RCC>
