@@ -1,0 +1,47 @@
+policy_module(sober,1.2)
+
+type sober_manifest_t;
+type sober_cert_t;
+type sober_login_conf_t;
+
+type sober_app_t;
+type sober_app_bin_t;
+
+type sober_appmand_t;
+type sober_appmand_exec_t;
+
+type sober_login_t;
+type sober_loginscreen_exec_t;
+
+type sober_store_t;
+type sober_soberstore_exec_t;
+
+type sober_desktop_t;
+type sober_desktop_exec_t;
+
+role unconfined_r;
+
+require {
+	attribute domain;
+	type kernel_t;
+}
+
+typeattribute sober_appmand_t domain;
+typeattribute sober_login_t domain;
+typeattribute sober_store_t domain;
+typeattribute sober_app_t domain;
+typeattribute sober_desktop_t domain;
+
+type_transition kernel_t sober_appmand_exec_t:process sober_appmand_t;
+
+type_transition sober_appmand_t sober_loginscreen_exec_t:process sober_login_t;
+type_transition sober_appmand_t sober_soberstore_exec_t:process sober_store_t;
+type_transition sober_appmand_t sober_app_bin_t:process sober_app_t;
+type_transition sober_appmand_t sober_desktop_exec_t:process sober_desktop_t;
+
+#============= ROLES ==============
+role system_r types { sober_appmand_t sober_login_t sober_store_t sober_app_t sober_desktop_t };
+role unconfined_r types  { sober_appmand_t sober_login_t sober_store_t sober_app_t sober_desktop_t };
+
+
+

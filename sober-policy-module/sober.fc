@@ -1,0 +1,14 @@
+/data/bin(/.*)?                 gen_context(system_u:object_r:sober_app_bin_t)
+/root/AppStore(/.*)?            gen_context(system_u:object_r:sober_app_bin_t)
+/root/AppStore/tmp/Downloads    gen_context(system_u:object_r:sober_app_bin_t)
+/root/AppStore/tmp/Install      gen_context(system_u:object_r:sober_app_bin_t)
+
+/etc/appmand(/.*)?              gen_context(system_u:object_r:sober_manifest_t)
+/etc/certs(/.*)?                gen_context(system_u:object_r:sober_cert_t)
+
+/etc/login.conf         --      gen_context(system_u:object_r:sober_login_conf_t)
+
+/usr/bin/appmand        --      gen_context(system_u:object_r:sober_appmand_exec_t)
+/usr/bin/LoginScreen    --      gen_context(system_u:object_r:sober_loginscreen_exec_t)
+/usr/bin/Soberstore     --      gen_context(system_u:object_r:sober_soberstore_exec_t)
+/usr/bin/DesktopScreen   --       gen_context(system_u:object_r:sober_desktop_exec_t)
