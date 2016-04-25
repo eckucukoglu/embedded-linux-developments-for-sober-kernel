@@ -1,0 +1,46 @@
+pam_deny.lo: pam_deny.c \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h \
+ ../../config.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/libintl.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/features.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/cdefs.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/wordsize.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs-hard.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.2/include/stddef.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/locale.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/locale.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/xlocale.h \
+ ../../libpam/include/security/pam_modules.h \
+ ../../libpam/include/security/_pam_types.h \
+ ../../libpam/include/security/_pam_compat.h
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h:
+
+../../config.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/libintl.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/features.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/cdefs.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/wordsize.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs-hard.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.2/include/stddef.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/locale.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/locale.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/xlocale.h:
+
+../../libpam/include/security/pam_modules.h:
+
+../../libpam/include/security/_pam_types.h:
+
+../../libpam/include/security/_pam_compat.h:

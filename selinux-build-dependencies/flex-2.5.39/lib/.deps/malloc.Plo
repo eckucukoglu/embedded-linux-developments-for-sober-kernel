@@ -1,0 +1,67 @@
+malloc.lo: malloc.c \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h \
+ ../config.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/types.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/features.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/cdefs.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/wordsize.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs-hard.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/types.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/typesizes.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/time.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.2/include/stddef.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/endian.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/endian.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/byteswap.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/byteswap-16.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/select.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/select.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/sigset.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/time.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/sysmacros.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/pthreadtypes.h
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h:
+
+../config.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/types.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/features.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/cdefs.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/wordsize.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs-hard.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/types.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/typesizes.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/time.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.2/include/stddef.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/endian.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/endian.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/byteswap.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/byteswap-16.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/select.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/select.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/sigset.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/time.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/sysmacros.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/pthreadtypes.h:

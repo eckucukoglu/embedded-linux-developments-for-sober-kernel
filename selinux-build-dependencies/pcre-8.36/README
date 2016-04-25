@@ -1,0 +1,63 @@
+Please look at README.project for pcre project readme file.
+----------------------------------------------------
+
+README regarding selinux-arm project:
+
+Quick installation:
+
+Clean source code first:
+./make clean
+./make distclean
+
+Set CC, PATH, CXX variables. 
+Against the "error adding symbols: bad value" error while compiling SELinux,
+-fPIC flag added CC and CXX variables in Makefile.
+./configure --host=arm
+./make
+./make install DESTDIR=~/pcre # for custom directory installation
+
+
+---------------------------------------------------
+pcre-8.36 configuration summary:
+
+    Install prefix .................. : /usr/local
+    C preprocessor .................. : arm-linux-gnueabihf-gcc -E
+    C compiler ...................... : arm-linux-gnueabihf-gcc
+    C++ preprocessor ................ : arm-linux-gnueabihf-g++ -E
+    C++ compiler .................... : arm-linux-gnueabihf-g++
+    Linker .......................... : /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/bin/ld
+    C preprocessor flags ............ : 
+    C compiler flags ................ : -g -O2 -fvisibility=hidden
+    C++ compiler flags .............. : -O2 -fvisibility=hidden -fvisibility-inlines-hidden
+    Linker flags .................... : 
+    Extra libraries ................. : 
+
+    Build 8 bit pcre library ........ : yes
+    Build 16 bit pcre library ....... : no
+    Build 32 bit pcre library ....... : no
+    Build C++ library ............... : yes
+    Enable JIT compiling support .... : no
+    Enable UTF-8/16/32 support ...... : no
+    Unicode properties .............. : no
+    Newline char/sequence ........... : lf
+    \R matches only ANYCRLF ......... : no
+    EBCDIC coding ................... : no
+    EBCDIC code for NL .............. : n/a
+    Rebuild char tables ............. : no
+    Use stack recursion ............. : yes
+    POSIX mem threshold ............. : 10
+    Internal link size .............. : 2
+    Nested parentheses limit ........ : 250
+    Match limit ..................... : 10000000
+    Match limit recursion ........... : MATCH_LIMIT
+    Build shared libs ............... : no
+    Build static libs ............... : yes
+    Use JIT in pcregrep ............. : no
+    Buffer size for pcregrep ........ : 20480
+    Link pcregrep with libz ......... : no
+    Link pcregrep with libbz2 ....... : no
+    Link pcretest with libedit ...... : no
+    Link pcretest with libreadline .. : no
+    Valgrind support ................ : no
+    Code coverage ................... : no
+-------------------------------------------------

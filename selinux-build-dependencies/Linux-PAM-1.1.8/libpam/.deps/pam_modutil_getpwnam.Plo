@@ -1,0 +1,199 @@
+pam_modutil_getpwnam.lo: pam_modutil_getpwnam.c \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h \
+ pam_modutil_private.h ../config.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/libintl.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/features.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/cdefs.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/wordsize.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs-hard.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.2/include/stddef.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/locale.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/locale.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/xlocale.h \
+ include/security/_pam_macros.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdlib.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/waitflags.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/waitstatus.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/endian.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/endian.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/byteswap.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/types.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/typesizes.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/byteswap-16.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/types.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/time.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/select.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/select.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/sigset.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/time.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/sysmacros.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/pthreadtypes.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/alloca.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdlib-bsearch.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdlib-float.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/string.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/string.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/string2.h \
+ include/security/pam_modules.h include/security/_pam_types.h \
+ include/security/_pam_compat.h include/security/pam_modutil.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/pwd.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdio.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/grp.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/shadow.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/paths.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/errno.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/errno.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/linux/errno.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm/errno.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic/errno.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic/errno-base.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.2/include-fixed/limits.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.2/include-fixed/syslimits.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/limits.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/posix1_lim.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/local_lim.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/linux/limits.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/posix2_lim.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/xopen_lim.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdio_lim.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/libio.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/_G_config.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/wchar.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.2/include/stdarg.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/sys_errlist.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdio.h
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h:
+
+pam_modutil_private.h:
+
+../config.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/libintl.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/features.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/cdefs.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/wordsize.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs-hard.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.2/include/stddef.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/locale.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/locale.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/xlocale.h:
+
+include/security/_pam_macros.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdlib.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/waitflags.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/waitstatus.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/endian.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/endian.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/byteswap.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/types.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/typesizes.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/byteswap-16.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/types.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/time.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/select.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/select.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/sigset.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/time.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/sysmacros.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/pthreadtypes.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/alloca.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdlib-bsearch.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdlib-float.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/string.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/string.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/string2.h:
+
+include/security/pam_modules.h:
+
+include/security/_pam_types.h:
+
+include/security/_pam_compat.h:
+
+include/security/pam_modutil.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/pwd.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdio.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/grp.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/shadow.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/paths.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/errno.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/errno.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/linux/errno.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm/errno.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic/errno.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic/errno-base.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.2/include-fixed/limits.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.2/include-fixed/syslimits.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/limits.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/posix1_lim.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/local_lim.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/linux/limits.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/posix2_lim.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/xopen_lim.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdio_lim.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/libio.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/_G_config.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/wchar.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.2/include/stdarg.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/sys_errlist.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdio.h:

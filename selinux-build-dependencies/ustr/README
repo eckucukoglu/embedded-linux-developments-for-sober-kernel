@@ -1,0 +1,54 @@
+Please see README.original for original ustr README file.
+---------------------------------------------------------
+
+To cross-compile for an ARM architecture:
+
+Compilation process needs inbuild 
+
+autoconf_64b and autoconf_vsnprintf executables,
+so first compile them according to your host machine.
+
+Then, in:
+
+ustr-import
+ustr-conf.h
+ustr-conf-debug.h
+
+files, set these variables as 0 by manual.
+(If compilation can't do it correctly)
+
+ustr-import
+-----------
+autoconf_64b=0
+autoconf_vsnprintf=0
+
+ustr-conf.h
+-----------
+# define USTR_CONF_HAVE_64bit_SIZE_MAX     0
+# define USTR_CONF_HAVE_RETARDED_VSNPRINTF 0
+
+ustr-conf-debug.h
+-----------------
+# define USTR_CONF_HAVE_64bit_SIZE_MAX     0
+# define USTR_CONF_HAVE_RETARDED_VSNPRINTF 0
+
+Then, Compile with:
+
+make
+make all-shared
+
+ Compile and Run test suite with:
+
+make check
+
+ Install all important files with:
+
+make install
+
+ Cleanup:
+
+make clean
+
+ Full cleanup, incl. .in -> real convertion etc:
+
+make distclean

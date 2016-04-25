@@ -1,0 +1,41 @@
+Please see README.original for Python version 2.7.5 README file.
+================================================================
+
+wget http://www.python.org/ftp/python/2.7.5/Python-2.7.5.tar.bz2
+tar -jxf Python-2.7.5.tar.bz2
+cd Python-2.7.5/
+
+After extraction Python source code,
+
+first 
+
+./configure # for host computer, no need to set CC, PATH variables.
+
+make python Parser/pgen
+
+then,
+
+mv python python_for_build
+mv Parser/pgen Parser/pgen_for_build
+
+these executables are used while python compilation.
+
+make distclean # to clean configure outputs like Makefile
+
+Set system variables: CC, PATH.
+
+Download this patch:
+http://bugs.python.org/file31991/Python-2.7.5-xcompile.patch
+
+Apply the patch:
+patch -p3 < Python-2.7.5-xcompile.patch
+
+./configure --host=arm-linux-gnueabihf --build=x86-linux --prefix=/python --disable-ipv6 ac_cv_file__dev_ptc=no ac_cv_file__dev_ptmx=no
+
+Manually edit Makefile and set:
+
+PYTHON_FOR_BUILD=./python_for_build
+
+make
+
+make install DESTDIR=~/python

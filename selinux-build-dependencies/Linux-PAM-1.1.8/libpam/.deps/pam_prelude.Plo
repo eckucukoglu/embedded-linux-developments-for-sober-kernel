@@ -1,0 +1,61 @@
+pam_prelude.lo: pam_prelude.c \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdio.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/features.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/cdefs.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/wordsize.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs-hard.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.2/include/stddef.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/types.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/typesizes.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/libio.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/_G_config.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/wchar.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.2/include/stdarg.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdio_lim.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/sys_errlist.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdio.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/syslog.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/syslog.h \
+ /home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/syslog-path.h
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdio.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/features.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/cdefs.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/wordsize.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs-hard.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.2/include/stddef.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/types.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/typesizes.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/libio.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/_G_config.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/wchar.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.2/include/stdarg.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdio_lim.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/sys_errlist.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/stdio.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/syslog.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/syslog.h:
+
+/home/ecank/1511/toolchain/arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/syslog-path.h:

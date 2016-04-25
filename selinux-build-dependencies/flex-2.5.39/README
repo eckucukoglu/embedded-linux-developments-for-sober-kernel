@@ -1,0 +1,21 @@
+Please see README.original for flex README file.
+------------------------------------------------
+README for cross-compilation:
+
+Quick installation:
+
+Set CC, PATH variables as required.
+./configure --host=arm
+
+After creating Makefile,
+
+against:
+libtool: link: cannot build libtool library `libcompat.la' from non-libtool objects on this host: malloc.o realloc.o
+
+in Makefile:
+use LTLIBOBJS instead of LIBOBJS.
+
+make
+make
+
+ignore docs/*pdf error due to texi2dvi tool.
