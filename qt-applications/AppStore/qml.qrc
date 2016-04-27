@@ -32,12 +32,13 @@
         <file>clock.png</file>
         <file>MemoryTester.png</file>
         <file>security.png</file>
-        <file>tetrix.png</file>
         <file>notebook.png</file>
         <file>NetworkConfiguration.png</file>
         <file>mail.png</file>
         <file>CpuAndMemoryMonitor.png</file>
         <file>Calender.png</file>
         <file>CustomButton.qml</file>
+        <file>Browser.png</file>
+        <file>Tetrix.png</file>
     </qresource>
 </RCC>

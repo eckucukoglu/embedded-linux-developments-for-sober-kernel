@@ -41,7 +41,6 @@
         <file>pics/sober_newspecs/icon/icon_remove.png</file>
         <file>pics/sober_newspecs/icon/icon-battery.png</file>
         <file>pics/sober_newspecs/icon/icon-settings.png</file>
-        <file>tetrix.png</file>
         <file>security.png</file>
         <file>notebook.png</file>
         <file>NetworkConfiguration.png</file>
@@ -50,5 +49,8 @@
         <file>Calender.png</file>
         <file>CustomMessageBox.qml</file>
         <file>CustomButton.qml</file>
+        <file>Tetrix.png</file>
+        <file>Browser.png</file>
+        <file>SoberStore.png</file>
     </qresource>
 </RCC>

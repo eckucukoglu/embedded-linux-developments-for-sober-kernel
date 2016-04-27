@@ -16,12 +16,13 @@ Item{
                 id: wirelessEthernetSwitchField
 
                 info: "Connection Type:"
-                text1: "Wireless"
-                text2: "Ethernet"
+                text2: "Wireless"
+                text1: "Ethernet"
 
                 onSwitched: {
                     wirelessEthernetSwitchField.activeText = (wirelessEthernetSwitchField.activeText == text1) ? (text2) : (text1)
                     refreshEntryList(activeText);
+                    console.log("refreshEntryList done.");
                 }
 
                 function refreshEntryList(activeText){
@@ -29,6 +30,7 @@ Item{
                     currentIP = networkHandler.getIP(activeText);
                     currentNetmask = networkHandler.getNetmask(activeText)
                     currentGateway = networkHandler.getGateway(currentIP, currentNetmask)
+                    console.log("getGateway done for." + activeText);
 
                     ipEntryField.text = currentIP;
                     netmaskEntryField.text = currentNetmask;
@@ -260,11 +262,14 @@ Item{
     Component.onCompleted: {
 
         //Filling the blanks initially.
-
-        currentMAC = networkHandler.getMACAddress("wireless")
-        currentIP = networkHandler.getIP("wireless");
-        currentNetmask = networkHandler.getNetmask("wireless")
+        wirelessEthernetSwitchField.activeText = "Ethernet"
+        console.log(wirelessEthernetSwitchField.activeText)
+        currentMAC = networkHandler.getMACAddress(wirelessEthernetSwitchField.activeText)
+        currentIP = networkHandler.getIP(wirelessEthernetSwitchField.activeText);
+        currentNetmask = networkHandler.getNetmask(wirelessEthernetSwitchField.activeText)
+        console.log("calling getGateway for ethernet.");
         currentGateway = networkHandler.getGateway(currentIP, currentNetmask)
+        console.log("getGateway done for ethernet.");
 
         ipEntryField.text = currentIP;
         netmaskEntryField.text = currentNetmask;

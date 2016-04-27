@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>jquery.min.js</file>
+        <file>exit-icon.png</file>
+        <file>exit.png</file>
+    </qresource>
+</RCC>
