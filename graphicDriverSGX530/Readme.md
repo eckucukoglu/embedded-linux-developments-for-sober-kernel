@@ -1,4 +1,4 @@
-# BeagleBone Black için Grafik Kütüphanesi Derleme(SGX530)
+# Graphic library compilation for For BeagleBone Black (SGX530)
 
 1- Download latest SGX libraries: <http://software-dl.ti.com/dsps/dsps_public_sw/sdo_sb/targetcontent/gfxsdk/latest/index_FDS.html>
 
