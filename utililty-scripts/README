@@ -1,0 +1,12 @@
+Usage :
+
+To start shamir servers:
+sudo ./shamirServers.sh [serverNo:0,1,2]
+
+To start application market server:
+sudo ./startSoberStore.sh
+
+To sign and pack an application:
+
+./signApp.sh [binaryFile]
+

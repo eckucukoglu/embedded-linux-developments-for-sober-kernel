@@ -1,0 +1,316 @@
+# number of nginx workers
+#worker_processes  6;
+upstream django {
+    server 127.0.0.1:1050;    
+}
+
+server {
+        listen 443;
+        server_name     127.0.0.1;
+        charset     utf-8;
+        
+        ssl                     on;
+        ssl_certificate         /etc/nginx/certs/www.soberstore.com.cert.pem;    #includes public key
+        ssl_certificate_key     /etc/nginx/private/soberstore.key;  #private key
+        #ssl_crl /etc/nginx/private/ca.crl      # Certificate Revocation List,is it really need?
+        ssl_client_certificate  /etc/nginx/certs/ca-chain.cert.pem; 
+        ssl_verify_client       on;
+        ssl_verify_depth        3;
+        ssl_session_timeout    5m;
+        ssl_protocols           TLSv1.1 TLSv1.2; # default SSLv3 TLSv1 TLSv1.1 TLSv1
+	    ssl_ciphers             HIGH:!aNULL:!MD5:!LOW:!DES:!DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!ECDHE-RSA-DES-CBC3-SHA;
+	    ssl_prefer_server_ciphers       on;
+
+
+	#Security options
+	#if ($request_method !~ ^(GET|POST|HEAD)$ ) {return 444;}
+	#if ($http_user_agent ~ (msnbot|Purebot|Baiduspider|Lipperhey|Mail.Ru|scrapbot)) { return 403; }
+	#if ($http_user_agent ~* LWP::Simple|wget|libwww-perl) { return 403; }
+	#if ($http_referer ~* (jewelry|viagra|nude|girl|nudit|casino|poker|porn|sex|teen|babes) ){ return 403;}
+
+        #error_page 400 /error/400.html;
+	    #error_page 403 /error/403.html;
+        #error_page 404 /error/404.html;
+        #error_page 405 /error/405.html;
+        #error_page 495 /error/495.html;
+        #error_page 496 /error/496.html;
+        #error_page 497 /error/497.html;
+        #error_page 502 /error/502.html;
+        #error_page 503 /error/503.html;
+        #error_page 500 501 504 /error/5xx.html;
+
+        #location ^~ /error/ {
+         #   internal;
+         #   root /etc/nginx/www;
+        #}
+
+	    #location /nginx_status {
+         #         stub_status on;
+         #         access_log   off;
+         #         deny all;
+        #}
+	
+	location /soberstore {                                                                    
+                 # needed to forward user's IP address to server machine                                                 
+                access_log  /home/burakmert/Projects/MMIS/SoberLogs/access.log;
+		        error_log  /home/burakmert/Projects/MMIS/SoberLogs/error.log info;
+
+		proxy_set_header                X-Real-IP  $remote_addr;
+		 # needed for HTTPS
+	    proxy_set_header X-Forwarded-For        $proxy_add_x_forwarded_for;
+		proxy_set_header Host                   $http_host;
+		proxy_set_header X-Forwarded-Proto      https;
+		proxy_redirect                          off;
+		proxy_max_temp_file_size                0;
+                proxy_next_upstream error timeout invalid_header http_500 http_502 http_503;                                                                                                 
+                # certificate info
+                proxy_set_header        Subject         $ssl_client_s_dn;
+                proxy_set_header        Issuer          $ssl_client_i_dn;
+                proxy_set_header        SerialNumber    $ssl_client_serial;
+                proxy_set_header        ClientVerified  $ssl_client_verify;
+                proxy_set_header        ssl_client_cert $ssl_client_cert;
+                
+		#proxy_pass http://127.0.0.1:8000;
+		uwsgi_pass django;
+		include /home/burakmert/Projects/MMIS/ApplicationServer/uwsgi_params;
+	}
+
+
+}
+
+upstream shamir0 {
+    server 0.0.0.0:7002;    
+}
+
+server {
+        listen 7001;
+       # server_name    ;
+        charset     utf-8;
+        
+        ssl                     on;
+        ssl_certificate         /etc/nginx/certs/shamir0.cert.pem;    #includes public key
+        ssl_certificate_key     /etc/nginx/private/shamir0.key.pem;  #private key
+        #ssl_crl /etc/nginx/private/ca.crl      # Certificate Revocation List,is it really need?
+        ssl_client_certificate  /etc/nginx/certs/ca-chain.cert.pem; 
+        ssl_verify_client       on;
+        ssl_verify_depth        3;
+        ssl_session_timeout    5m;
+        ssl_protocols           TLSv1.1 TLSv1.2; # default SSLv3 TLSv1 TLSv1.1 TLSv1
+	    ssl_ciphers             HIGH:!aNULL:!MD5:!LOW:!DES:!DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!ECDHE-RSA-DES-CBC3-SHA;
+	    ssl_prefer_server_ciphers       on;
+
+
+	#Security options
+	#if ($request_method !~ ^(GET|POST|HEAD)$ ) {return 444;}
+	#if ($http_user_agent ~ (msnbot|Purebot|Baiduspider|Lipperhey|Mail.Ru|scrapbot)) { return 403; }
+	#if ($http_user_agent ~* LWP::Simple|wget|libwww-perl) { return 403; }
+	#if ($http_referer ~* (jewelry|viagra|nude|girl|nudit|casino|poker|porn|sex|teen|babes) ){ return 403;}
+
+        #error_page 400 /error/400.html;
+	    #error_page 403 /error/403.html;
+        #error_page 404 /error/404.html;
+        #error_page 405 /error/405.html;
+        #error_page 495 /error/495.html;
+        #error_page 496 /error/496.html;
+        #error_page 497 /error/497.html;
+        #error_page 502 /error/502.html;
+        #error_page 503 /error/503.html;
+        #error_page 500 501 504 /error/5xx.html;
+
+        #location ^~ /error/ {
+         #   internal;
+         #   root /etc/nginx/www;
+        #}
+
+	    #location /nginx_status {
+         #         stub_status on;
+         #         access_log   off;
+         #         deny all;
+        #}
+	
+	location /shamir {                                                                    
+                 # needed to forward user's IP address to server machine                                                 
+                access_log  /home/burakmert/Projects/MMIS/ShamirLogs/shamir0/access.log;
+		        error_log  /home/burakmert/Projects/MMIS/ShamirLogs/shamir0/error.log info;
+
+		proxy_set_header                X-Real-IP  $remote_addr;
+		 # needed for HTTPS
+	    proxy_set_header X-Forwarded-For        $proxy_add_x_forwarded_for;
+		proxy_set_header Host                   $http_host;
+		proxy_set_header X-Forwarded-Proto      https;
+		proxy_redirect                          off;
+		proxy_max_temp_file_size                0;
+                proxy_next_upstream error timeout invalid_header http_500 http_502 http_503;                                                                                                 
+                # certificate info
+                #proxy_set_header        Subject         $ssl_client_s_dn;
+                #proxy_set_header        Issuer          $ssl_client_i_dn;
+                #proxy_set_header        SerialNumber    $ssl_client_serial;
+                #proxy_set_header        ClientVerified  $ssl_client_verify;
+                #proxy_set_header        ssl_client_cert $ssl_client_cert;
+                
+		#proxy_pass http://127.0.0.1:8000;
+		
+		uwsgi_pass shamir0;
+		include /home/burakmert/Projects/MMIS/ShamirServers/shamir0/uwsgi_params;
+	}
+
+
+}
+
+upstream shamir1 {
+    server 127.0.0.1:8002;    
+}
+
+server {
+        listen 8001;
+        server_name     127.0.0.1;
+        charset     utf-8;
+        
+        ssl                     on;
+        ssl_certificate         /etc/nginx/certs/shamir1.cert.pem;    #includes public key
+        ssl_certificate_key     /etc/nginx/private/shamir1.key.pem;  #private key
+        #ssl_crl /etc/nginx/private/ca.crl      # Certificate Revocation List,is it really need?
+        ssl_client_certificate  /etc/nginx/certs/ca-chain.cert.pem; 
+        ssl_verify_client       on;
+        ssl_verify_depth        3;
+        ssl_session_timeout    5m;
+        ssl_protocols           TLSv1.1 TLSv1.2; # default SSLv3 TLSv1 TLSv1.1 TLSv1
+	    ssl_ciphers             HIGH:!aNULL:!MD5:!LOW:!DES:!DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!ECDHE-RSA-DES-CBC3-SHA;
+	    ssl_prefer_server_ciphers       on;
+
+
+	#Security options
+	#if ($request_method !~ ^(GET|POST|HEAD)$ ) {return 444;}
+	#if ($http_user_agent ~ (msnbot|Purebot|Baiduspider|Lipperhey|Mail.Ru|scrapbot)) { return 403; }
+	#if ($http_user_agent ~* LWP::Simple|wget|libwww-perl) { return 403; }
+	#if ($http_referer ~* (jewelry|viagra|nude|girl|nudit|casino|poker|porn|sex|teen|babes) ){ return 403;}
+
+        #error_page 400 /error/400.html;
+	    #error_page 403 /error/403.html;
+        #error_page 404 /error/404.html;
+        #error_page 405 /error/405.html;
+        #error_page 495 /error/495.html;
+        #error_page 496 /error/496.html;
+        #error_page 497 /error/497.html;
+        #error_page 502 /error/502.html;
+        #error_page 503 /error/503.html;
+        #error_page 500 501 504 /error/5xx.html;
+
+        #location ^~ /error/ {
+         #   internal;
+         #   root /etc/nginx/www;
+        #}
+
+	    #location /nginx_status {
+         #         stub_status on;
+         #         access_log   off;
+         #         deny all;
+        #}
+	
+	location /shamir {                                                                    
+                 # needed to forward user's IP address to server machine                                                 
+                access_log  /home/burakmert/Projects/MMIS/ShamirLogs/shamir1/access.log;
+		        error_log  /home/burakmert/Projects/MMIS/ShamirLogs/shamir1/error.log info;
+
+		proxy_set_header                X-Real-IP  $remote_addr;
+		 # needed for HTTPS
+	    proxy_set_header X-Forwarded-For        $proxy_add_x_forwarded_for;
+		proxy_set_header Host                   $http_host;
+		proxy_set_header X-Forwarded-Proto      https;
+		proxy_redirect                          off;
+		proxy_max_temp_file_size                0;
+                proxy_next_upstream error timeout invalid_header http_500 http_502 http_503;                                                                                                 
+                # certificate info
+                proxy_set_header        Subject         $ssl_client_s_dn;
+                proxy_set_header        Issuer          $ssl_client_i_dn;
+                proxy_set_header        SerialNumber    $ssl_client_serial;
+                proxy_set_header        ClientVerified  $ssl_client_verify;
+                proxy_set_header        ssl_client_cert $ssl_client_cert;
+                
+		
+		uwsgi_pass shamir1;
+		include /home/burakmert/Projects/MMIS/ShamirServers/shamir1/uwsgi_params;
+	}
+
+
+}
+
+upstream shamir2 {
+    server 127.0.0.1:9002;    
+}
+
+server {
+        listen 9001;
+        server_name     127.0.0.1;
+        charset     utf-8;
+        
+        ssl                     on;
+        ssl_certificate         /etc/nginx/certs/shamir2.cert.pem;    #includes public key
+        ssl_certificate_key     /etc/nginx/private/shamir2.key.pem;  #private key
+        #ssl_crl /etc/nginx/private/ca.crl      # Certificate Revocation List,is it really need?
+        ssl_client_certificate  /etc/nginx/certs/ca-chain.cert.pem; 
+        ssl_verify_client       on;
+        ssl_verify_depth        3;
+        ssl_session_timeout    5m;
+        ssl_protocols           TLSv1.1 TLSv1.2; # default SSLv3 TLSv1 TLSv1.1 TLSv1
+	    ssl_ciphers             HIGH:!aNULL:!MD5:!LOW:!DES:!DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!ECDHE-RSA-DES-CBC3-SHA;
+	    ssl_prefer_server_ciphers       on;
+
+
+	#Security options
+	#if ($request_method !~ ^(GET|POST|HEAD)$ ) {return 444;}
+	#if ($http_user_agent ~ (msnbot|Purebot|Baiduspider|Lipperhey|Mail.Ru|scrapbot)) { return 403; }
+	#if ($http_user_agent ~* LWP::Simple|wget|libwww-perl) { return 403; }
+	#if ($http_referer ~* (jewelry|viagra|nude|girl|nudit|casino|poker|porn|sex|teen|babes) ){ return 403;}
+
+        #error_page 400 /error/400.html;
+	    #error_page 403 /error/403.html;
+        #error_page 404 /error/404.html;
+        #error_page 405 /error/405.html;
+        #error_page 495 /error/495.html;
+        #error_page 496 /error/496.html;
+        #error_page 497 /error/497.html;
+        #error_page 502 /error/502.html;
+        #error_page 503 /error/503.html;
+        #error_page 500 501 504 /error/5xx.html;
+
+        #location ^~ /error/ {
+         #   internal;
+         #   root /etc/nginx/www;
+        #}
+
+	    #location /nginx_status {
+         #         stub_status on;
+         #         access_log   off;
+         #         deny all;
+        #}
+	
+	location /shamir {                                                                    
+                 # needed to forward user's IP address to server machine                                                 
+                access_log  /home/burakmert/Projects/MMIS/ShamirLogs/shamir2/access.log;
+		        error_log  /home/burakmert/Projects/MMIS/ShamirLogs/shamir2/error.log info;
+
+		proxy_set_header                X-Real-IP  $remote_addr;
+		 # needed for HTTPS
+	    proxy_set_header X-Forwarded-For        $proxy_add_x_forwarded_for;
+		proxy_set_header Host                   $http_host;
+		proxy_set_header X-Forwarded-Proto      https;
+		proxy_redirect                          off;
+		proxy_max_temp_file_size                0;
+                proxy_next_upstream error timeout invalid_header http_500 http_502 http_503;                                                                                                 
+                # certificate info
+                proxy_set_header        Subject         $ssl_client_s_dn;
+                proxy_set_header        Issuer          $ssl_client_i_dn;
+                proxy_set_header        SerialNumber    $ssl_client_serial;
+                proxy_set_header        ClientVerified  $ssl_client_verify;
+                proxy_set_header        ssl_client_cert $ssl_client_cert;
+                
+		#proxy_pass http://127.0.0.1:8000;
+		uwsgi_pass shamir2;
+		include /home/burakmert/Projects/MMIS/ShamirServers/shamir2/uwsgi_params;
+	}
+
+
+}
+
+
