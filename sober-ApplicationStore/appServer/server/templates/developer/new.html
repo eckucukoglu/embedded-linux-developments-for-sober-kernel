@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Minimal Django File Upload Example</title>
+    </head>
+
+    <body> 
+            <!-- Upload form. Note enctype attribute! -->
+            {% if messages %}                
+                {% for message in messages %}
+                    <p>{{ message }}</p>             
+                {% endfor %}                
+            {% endif %}
+        <form action="{% url "create_developer" %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}            
+            <p>{{ form.non_field_errors }}</p>
+
+            <p>{{ form.certFile.label }}</p>
+            <p>                
+                {{ form.certFile }}
+            </p>
+            <label>Developer Name:</label>
+            <input name="name" placeholder="Team Name" value = '{{ developer.dev_name }}' required>
+            <br>         	
+           	<p><input type="submit" value="Upload"/></p>
+           
+        </form>
+    </body>
+
+</html>

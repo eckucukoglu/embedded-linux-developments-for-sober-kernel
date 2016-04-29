@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Minimal Django File Upload Example</title>
+    </head>
+
+    <body> 
+            <!-- Upload form. Note enctype attribute! -->
+             {% if messages %}                
+                {% for message in messages %}
+                    <p>{{ message }}</p>             
+                {% endfor %}                
+            {% endif %}
+        <form action="{% url "create" %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <p>{{ form.non_field_errors }}</p>
+
+            <p>{{ form.packageFile.label}}</p>
+
+            <p>                
+                {{ form.packageFile }}
+            </p>   
+            <label>Application Name:</label>
+            <input name="name" placeholder="Pretty Name" required>           
+            <label>Version:</label>
+            <input name="version" placeholder="Version" required>
+            <br>
+            <br>            
+            {% if developers %}
+            	<label> Developer :</label>
+            	<select name="developer">
+                	{% for dev in developers %}
+                    	<option value='{{ dev.developer_name }}'>{{ dev.developer_name }}</option>
+               	 	{% endfor %}
+            	</select>
+            {% endif %}
+                <label> Cgroup :</label>
+                <select name="cgroup">
+                    {% for group in cgroup_choices %}
+                        <option value='{{ group }}'>{{ group }}</option>
+                        {% if group == "none" %}
+                            <option value='{{ group }}' selected>{{ group }}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+           	<p><input type="submit" value="Upload"/></p>
+           	
+        </form>
+    </body>
+
+</html>
